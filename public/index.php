@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include 'header.php'; 
+include '../includes/header.php'; 
 ?>
 
 <!-- Hero Section -->
@@ -95,4 +95,4 @@ include 'header.php';
 }
 </style>
 
-<?php include 'footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

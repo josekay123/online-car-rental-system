@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -37,7 +37,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 ?>
 
-<?php include 'header.php'; ?>
+<?php include '../includes/header.php'; ?>
 
 <div class="min-h-screen bg-slate-50 py-12">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -174,4 +174,4 @@ $result = $stmt->get_result();
     </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

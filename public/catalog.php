@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 $search = isset($_GET['search']) ? $_GET['search'] : '';
 $category = isset($_GET['category']) ? $_GET['category'] : 'all';
@@ -29,7 +29,7 @@ $result = $conn->query($sql);
 $categories = ["Sedan", "SUV", "Luxury", "Sports", "Convertible", "Electric"];
 ?>
 
-<?php include 'header.php'; ?>
+<?php include '../includes/header.php'; ?>
 
 <div class="bg-white border-b border-slate-200">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -146,4 +146,4 @@ $categories = ["Sedan", "SUV", "Luxury", "Sports", "Convertible", "Electric"];
     </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

@@ -8,7 +8,7 @@ if (!isset($_SESSION['admin_logged_in']) || $_SESSION['admin_logged_in'] !== tru
 }
 
 // Connect to database
-include '../config.php';
+include '../../includes/config.php';
 
 // Get statistics
 $stats = [

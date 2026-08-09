@@ -1,5 +1,5 @@
 <?php
-include 'config.php';
+include '../includes/config.php';
 
 if (!isset($_SESSION['user_id'])) {
     header("Location: login.php");
@@ -134,7 +134,7 @@ $check_approvals->execute();
 $recent_approvals = $check_approvals->get_result()->fetch_all(MYSQLI_ASSOC);
 ?>
 
-<?php include 'header.php'; ?>
+<?php include '../includes/header.php'; ?>
 
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
     <a href="catalog.php" class="inline-flex items-center text-slate-500 hover:text-indigo-600 mb-6">
@@ -774,4 +774,4 @@ document.getElementById('bookingForm').addEventListener('submit', function(e) {
 });
 </script>
 
-<?php include 'footer.php'; ?>
+<?php include '../includes/footer.php'; ?>
